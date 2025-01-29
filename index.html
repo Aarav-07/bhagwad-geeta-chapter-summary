@@ -67,11 +67,11 @@
         }
 
         h2 {
-            color: var(--chapter-name-light); /* Light mode chapter name color */
+            color: var(--chapter-name-light); 
         }
 
         body.dark-mode h2 {
-            color: var(--chapter-name-dark); /* Dark mode chapter name color */
+            color: var(--chapter-name-dark); 
         }
 
         h3 {
@@ -153,7 +153,7 @@
         <p id="summary">Click the button to get a chapter summary from Bhagavad Gita.</p>
         <p id="chapter"></p>
     </div>
-    <!-- Place the button below the data, centered -->
+   
     <div style="text-align: center; margin-top: 20px;">
         <button onclick="getRandomChapter()">Generate Summary</button>
     </div>
@@ -178,7 +178,7 @@
                     return;
                 }
                 
-                // Select a random chapter
+               
                 const randomChapter = data[Math.floor(Math.random() * data.length)];
                 
                 document.getElementById("chapter-name").textContent = randomChapter.name || "No name available";
